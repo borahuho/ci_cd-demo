@@ -1,4 +1,4 @@
-name: HTML checker
+name: HTML link checker
 
 on:
   push:
@@ -7,8 +7,13 @@ on:
     branches: [ main ]
 
 jobs:
-
-      - name: Check HTML
-        uses: chabad360/htmlproofer@master
-        with:
-          directory: "./src"
+  check_html_links_job:
+    runs-on: ubuntu-latest
+    name: A job to test check-html-links-action
+    steps:
+    - uses: actions/checkout@v2
+    - name: check-html-links-action step
+      id: check-links
+      uses: modernweb-dev/check-html-links-action@v1
+      with:
+        doc-folder: 'src'
