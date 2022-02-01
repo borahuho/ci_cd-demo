@@ -1,4 +1,5 @@
 ...
+name: html checker
       - name: Check HTML
         uses: chabad360/htmlproofer@master
         with:
