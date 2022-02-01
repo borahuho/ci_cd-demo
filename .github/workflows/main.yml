@@ -1,5 +1,13 @@
-...
-name: html checker
+name: HTML checker
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+
       - name: Check HTML
         uses: chabad360/htmlproofer@master
         with:
