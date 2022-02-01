@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: chabad360/htmlproofer@master
       with:
-          doc-folder: 'src'
+          directory: "/var/www/html"
           # The directory to scan
           arguments: --allow-missing-href
           # The arguments to pass to HTMLProofer
