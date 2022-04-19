@@ -5,7 +5,7 @@ This repo is for a CI/CD demo.
 
 ## Prerequisites
 
-Works on Windows 10 and tested on macOS (macOS needs the Virtualbox extension pack).
+Works on Windows 10 and tested on macOS.
 
 Software needed:
 * Git bash for Windows
